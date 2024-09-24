@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Search Element</title>
+  </head>
+  <body>
+    <input type="text" id="searchElement" placeholder="search" />
+    <button onclick="handleSearch()">Search Element</button>
+  </body>
+  <script>
+    const handleSearch = () => {
+      const search = [12, 13, 14, 15, 16, 17, 18, 19];
+      let index = "undefined";
+      const item = document.getElementById("searchElement").value;
+
+      for (let i = 0; i <= search.length - 1; i++) {
+        if (search[i] == item) {
+          index = i;
+          break;
+        }
+      }
+      console.log(index);
+    };
+  </script>
+</html>
